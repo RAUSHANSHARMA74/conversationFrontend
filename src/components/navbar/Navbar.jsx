@@ -7,7 +7,7 @@ import socket from "../socketConnection/SocketConnection"
 
 
 // const url = "http://localhost:3571";
-const url = "https://conversationbackend.onrender.com";
+// const url = "https://conversationbackend.onrender.com";
 
 
 const loginUrl = "/login";
@@ -32,7 +32,7 @@ function Navbar({ userDetail, setFriends, friends }) {
 
     const handleGetSendResponse = (data) => {
         const { message, sender, receiver } = data
-        if (sender == undefined || receiver == undefined) {
+        if (sender === undefined || receiver === undefined) {
             return Swal.fire('Good job!', message, 'success');
         }
         if (sender._id === _id) {

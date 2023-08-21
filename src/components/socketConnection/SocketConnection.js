@@ -13,7 +13,7 @@ const socket = io.connect("https://conversationbackend.onrender.com/", {
   },
 });
 
-const loginUrl = "/login";
+// const loginUrl = "/login";
 socket.on('connect', () => {
   console.log('Connected to Socket.IO server');
   // Perform actions that require the authenticated socket connection
